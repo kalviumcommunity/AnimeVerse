@@ -1,8 +1,7 @@
-# React + Vite
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+Project Name: ANIMEVERSE
 
-Currently, two official plugins are available:
+DESCRIPTION:-
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react/README.md) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+In this project, we will have a diverse range of anime shows, with each show belonging to a unique genre. Our objective is to create an exhaustive list from the most popular and critically acclaimed anime series to the hidden gems that need more recognition.
+
