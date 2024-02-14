@@ -9,6 +9,7 @@ import { Routes, Route } from "react-router-dom";
 function App() {
   return (
     <>
+    <h1>AnimeVerse</h1>
        <Heading/>
       {/* <Login /> */}
       <Routes>
