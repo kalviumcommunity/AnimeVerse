@@ -1,0 +1,165 @@
+[
+
+    {
+      "Count": 1,
+      "Name": "Fullmetal Alchemist",
+      "ReleaseDate": "April 5, 2009",
+      "Type": "Shounen, Adventure, Fantasy",
+      "ImageUrl": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcS1dx2Fp1m7fM6rXw09v9Li9_HkyDEMQrMJr466HdQCRovf3IPsv6GQg_2amx9b",
+      "Description": "Based on the manga by Hiromu Arakawa, this series follows the journey of two brothers, Edward and Alphonse Elric, as they seek the Philosopher's Stone to restore their bodies."
+    },
+    {
+      "Count": 2,
+      "Name": "Death Note",
+      "ReleaseDate": "October 4, 2006",
+      "Type": "Mystery, Psychological, Supernatural",
+      "ImageUrl": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcRbbkBbZ-YAx-FMME2M8n4hrEN9Px-3Q3ommRuZTL_oWQOP6fWOSDrF5AsKHQaU",
+      "Description": "Light Yagami discovers a mysterious notebook that allows him to kill anyone by writing their name in it. He takes on the identity of \"Kira\" to create a utopia free of criminals."
+    },
+    {
+      "Count": 3,
+      "Name": "Attack on Titan",
+      "ReleaseDate": "April 6, 2013",
+      "Type": "Action, Dark Fantasy, Post-Apocalyptic",
+      "ImageUrl": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcQwMr-Dt2Naody8XO7dgMvSFRMbIWmphN2WFJrnNS5A1GO3eP46F-Xuy5A-WBw_",
+      "Description": "In a world where humanity resides within enormous walled cities to protect themselves from Titans, gigantic humanoid creatures, the story unfolds as Eren Yeager seeks revenge."
+    },
+    {
+      "Count": 4,
+      "Name": "One Piece",
+      "ReleaseDate": "October 20, 1999",
+      "Type": "Shounen, Action, Adventure",
+      "ImageUrl": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcQLCsSGd06_GRsXtLlgceOSsSUuUXHck1C_vLILipASrRBcY4ybzWT9vZpuMEGd",
+      "Description": "Monkey D. Luffy and his diverse crew embark on a journey to find the legendary One Piece and become the Pirate King."
+    },
+    {
+      "Count": 5,
+      "Name": "Naruto",
+      "ReleaseDate": "October 3, 2002",
+      "Type": "Shounen, Action, Adventure",
+      "ImageUrl": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQ4A6JV2Kt4DdPqVRbObVroO5mTiSwzwsJN3kOJ5lYAUZ1e8n6GSy7MbyMmY6qn",
+      "Description": "Naruto Uzumaki, a young ninja with dreams of becoming the strongest ninja and earning the title of Hokage, faces various challenges in his journey."
+    },
+    {
+      "Count": 6,
+      "Name": "Cowboy Bebop",
+      "ReleaseDate": "April 3, 1998",
+      "Type": "Space Western, Noir, Adventure",
+      "ImageUrl": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcTCQ918srrVfCoX6jF3GHs43VMXY8IyjDT_pGoEW7fbBMAQYj6R-9Z8EJ_z0RYt",
+      "Description": "A group of bounty hunters travels through space in the year 2071, facing their pasts and dealing with various criminals."
+    },
+    {
+      "Count": 7,
+      "Name": "My Hero Academia",
+      "ReleaseDate": "April 3, 2016",
+      "Type": "Shounen, Action, Superpower",
+      "ImageUrl": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcTePCDsu8n70hwj0wRF67QIb4CkzqQvOTrUSZVQpcH1nomu1bflwiGNt5L6ekES",
+      "Description": "In a world where nearly everyone has superpowers, Izuku Midoriya strives to become a hero despite being born without any powers."
+    },
+    {
+      "Count": 8,
+      "Name": "Steins;Gate",
+      "ReleaseDate": "April 6, 2011",
+      "Type": "Sci-Fi, Thriller",
+      "ImageUrl": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRyb_Ist4XiIg7mmNWzmtLqKd8jfbg_1OOG6RsmqjK01XE2NI9iSO5pcevZ_SzA",
+      "Description": "Rintarou Okabe discovers a way to send messages to the past, leading to a series of events that could change the course of time."
+    },
+    {
+      "Count": 9,
+      "Name": "Dragon Ball Z",
+      "ReleaseDate": "April 26, 1989",
+      "Type": "Shounen, Action, Adventure",
+      "ImageUrl": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcSdmogkXKtutFzLtLDUG5kZJNExXbZMNTyXAoudJrF4eNABUE6s7O5tynkumn8m",
+      "Description": "The adventures of Goku and his friends as they defend Earth from powerful foes and seek the magical Dragon Balls."
+    },
+    {
+      "Count": 10,
+      "Name": "Sword Art Online",
+      "ReleaseDate": "July 7, 2012",
+      "Type": "Adventure, Fantasy",
+      "ImageUrl": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcRFmybSnnEm9q7hdaM_Ywne9bWp3ZMm7kq0IwE5fiTXl7VhSkjrAaXMxsnY0vYW",
+      "Description": "Players get trapped in a virtual reality MMORPG, and the only way to escape is to clear the game without dying."
+    },
+    {
+      "Count": 11,
+      "Name": "Hunter x Hunter",
+      "ReleaseDate": "October 2, 2011",
+      "Type": "Shounen, Action, Adventure",
+      "ImageUrl": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQXb_h5GlEooWJgV1bDrLrA9QDLBSNQHlSSDo0Feg-EJ9E7O7SgfTddR5Rb3Apo",
+      "Description": "Gon Freecss aspires to become a Hunter to find his missing father and uncover the mysteries of the world."
+    },
+    {
+      "Count": 12,
+      "Name": "Demon Slayer",
+      "ReleaseDate": "April 6, 2019",
+      "Type": "Action, Historical, Supernatural",
+      "ImageUrl": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSrawZ4G7WJSKRy8PcwmrsQcT0D6q_1hT95zuuWUpit0-jk7u4keEtzqqp-ayAX",
+      "Description": "Tanjiro Kamado becomes a demon slayer to avenge his family and save his demon-turned sister."
+    },
+    {
+      "Count": 13,
+      "Name": "Neon Genesis Evangelion",
+      "ReleaseDate": "October 4, 1995",
+      "Type": "Mecha, Psychological, Sci-Fi",
+      "ImageUrl": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcTjnXncOLDC1B8arK4MyRlCIfKZk1D_X5C02x6dHTTr6jDDvIJ4LHc9LpYjfJ6n",
+      "Description": "In a post-apocalyptic world, teenagers pilot giant mechs to protect Earth from mysterious beings known as Angels."
+    },
+    {
+      "Count": 14,
+      "Name": "One Punch Man",
+      "ReleaseDate": "October 5, 2015",
+      "Type": "Action, Comedy, Superpower",
+      "ImageUrl": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcRYyKaLoPVdsa9Ya1Gvdf7OFu6PZ2V7-Z4Ck8-VUNvSApzfWoYrnhGWl-hNDrMZ",
+      "Description": "Saitama, a hero who can defeat any opponent with a single punch, seeks meaning in his hero life."
+    },
+    {
+      "Count": 15,
+      "Name": "Code Geass",
+      "ReleaseDate": "October 6, 2006",
+      "Type": "Action, Comedy, Superpower",
+      "ImageUrl": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcTiw6DkfZoKIwqSPJi1ar3SFiFUdy9QfH_2hlu5-IIKl3aGOgFHwJi9ON2YJJG5",
+      "Description": "Lelouch vi Britannia gains a mysterious power and leads a rebellion against the oppressive Britannian Empire."
+    },
+    {
+      "Count": 16,
+      "Name": "Your Lie in April",
+      "ReleaseDate": "October 10, 2014",
+      "Type": "Drama, Music, Romance",
+      "ImageUrl": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcTYFixzClmj7pUR_AumEko4uw6uHjUduuXnTr5Ui1YAp89l9J4hhD1rtNYl7SiU",
+      "Description": "A piano prodigy, Kousei Arima, finds new inspiration for music through the free-spirited violinist, Kaori Miyazono."
+    },
+    {
+      "Count": 17,
+      "Name": "Mob Psycho 100",
+      "ReleaseDate": "July 12, 2016",
+      "Type": "Action, Slice of Life, Supernatural",
+      "ImageUrl": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcTtSll3sbxxImXSDcHG3ole5MDLFRS5m20L6GZDcroIWd2qDiCrXPyjGcloV5En",
+      "Description": "Shigeo Kageyama, nicknamed 'Mob,' possesses powerful psychic abilities but seeks a normal life while navigating the challenges of adolescence."
+    },
+    {
+      "Count": 18,
+      "Name": "Death Parade",
+      "ReleaseDate": "January 10, 2015",
+      "Type": "Game, Mystery, Psychological",
+      "ImageUrl": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcRTcSK0RcUEVii1VxaZzxVNSX00S1XhgWLAq_lOUDA704B8Lz71ohRCRDsKuUQN",
+      "Description": "In the afterlife, souls are judged through various games, and the outcomes determine their fate."
+    },
+    {
+      "Count": 19,
+      "Name": "JoJo's Bizarre Adventure",
+      "ReleaseDate": "October 6, 2012",
+      "Type": "Action, Adventure, Supernatural",
+      "ImageUrl": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcR8DQF5bWOYbONLP18OkK0hPECMFF5qzhhbdGa-LLqV7QFBe1ZlLYrBrCElRcuU",
+      "Description": "Follows the adventures of the Joestar family across generations as they battle supernatural threats."
+    },
+    {
+      "Count": 20,
+      "Name": "Tokyo Ghoul",
+      "ReleaseDate": "July 4, 2014",
+      "Type": "Horror, Mystery, Psychological",
+      "ImageUrl": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcT1zGIR8WQrXbcETa5gryOT-4pSDba_RDMcCUSKj5Rv2sRlg9_Z4CwNSrl76TMI",
+      "Description": "Kaneki, a college student turned half-ghoul, navigates the dangerous world of ghouls and humans."
+    }
+
+
+  ]
