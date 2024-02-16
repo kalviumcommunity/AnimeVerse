@@ -1,6 +1,8 @@
 .heading-main{
     position: relative;
-    margin: 25px;
+    /* margin: 25px; */
+    margin-bottom: 30px;
+    top: 20px;
     font-size: 3rem;
     letter-spacing: 6px;
     text-transform: uppercase;
