@@ -1,0 +1,36 @@
+.data-box{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    width: 100%;
+
+}
+
+.adddata-heading{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  
+}
+
+.outline{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    border: 2px solid;
+    width: 50vw;
+    height: 100vh;
+    margin: 20vh 20vw;
+}
+
+.main-data{
+    display: flex;
+}
+
+.data-details{
+    display: flex;
+    flex-direction: column;
+}
