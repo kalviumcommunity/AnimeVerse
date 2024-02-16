@@ -1,6 +1,7 @@
-import React from "react";
-import "./AddData.css";
 import { useState } from "react";
+import { useNavigate } from 'react-router-dom'
+import axios from 'axios'
+import "./AddData.css";
 
 export default function AddData() {
 
@@ -10,13 +11,14 @@ export default function AddData() {
     const[ImageUrl, SetImageUrl] = useState('');
     const[Description, SetDescription] = useState('');
 
+    const navigate = useNavigate();
     const Submit= (e) => {
         e.preventDefault()
-        axios.post('http://localhost:700/adddata', {SetName,SetReleaseDate, SetType, SetImageUrl,SetDescription, posterLink})
+        axios.post('http://localhost:7000/add', {Name,ReleaseDate, Type, ImageUrl,Description})
 
             .then(res => {
                 console.log(res)
-                navigate('/content')
+                navigate('/MainPage')
             })
             .catch((err) => console.log(err))
     }
@@ -38,20 +40,15 @@ export default function AddData() {
             </div>
 
             <div className="data-details">
-              <input type="text" value="" />
-              <input type="text" value="" />
-              <input type="text" value="" />
-              <input type="text" value="" />
-              <input type="text" value="" />
+            <input type='text' id="" value={Name} onChange={(e) => SetName(e.target.value)} />
+            <input type='text' id="" value={ReleaseDate} onChange={(e) => SetReleaseDate(e.target.value)} />
+            <input type='text' id="" value={Type} onChange={(e) => SetType(e.target.value)} />
+            <input type='text' id="" value={ImageUrl} onChange={(e) => SetImageUrl(e.target.value)} />
+            <input type='text' id="" value={Description} onChange={(e) => SetDescription(e.target.value)} />
             </div>
           </div>
           <div>
-            <button onClick={() => alert("Data added successfully")}>
-              Submit
-            </button>
-            <button onClick={() => alert("Data added successfully")}>
-              Go Back
-            </button>
+            <button type="submit"> Submit </button>
           </div>
         </div>
       </form>
