@@ -12,7 +12,7 @@ export default function MainPage() {
 
   useEffect(() => {
     axios
-      .get("http://localhost:700/")
+      .get("http://localhost:7000/data")
       .then((response) => {
         setdata(response.data);
         // console.log(response);

@@ -16,4 +16,14 @@ app.get("/ping", (req, res) => {
   res.send("hello");
 });
 
-app.listen(100);
+app.post("/add", (req, res) => {
+  // if (error) {
+  //   console.log(error);
+  //   return res.status(400).json(error.details);
+  // }
+  Modal.create(req.body)
+  .then(users => res.json(users))
+  .catch(err => console.log(err));
+})
+
+app.listen(7000);

@@ -1,21 +1,21 @@
 import './App.css'
-import Heading from './Components/Heading/Heading';
-// import FlipCard from './Components/FlipCard';
-// import Login from './screens/login page/login';
+import Navbar from './Components/Navbar/NavBar';
+import LoginPage2 from './screens/LoginPage2/LoginPage2';
 import LandingPage from './screens/Landing Page/LandingPage'
+import FormData from './screens/AddData/AddData'
 import MainPage from './screens/Main Page/MainPage'
 import { Routes, Route } from "react-router-dom";
 
 function App() {
   return (
     <>
-       <Heading/>
-      {/* <Login /> */}
+       <Navbar/>
+      {/* <LoginPage2/> */}
       <Routes>
         <Route path="/" element={<LandingPage />} />
         <Route path="/MainPage" element={<MainPage />} />
-        {/* <Route path="/Login" element={<Login />} /> */}
-        {/* <Route path="/MainPage" element={<FlipCard />} /> */}
+        <Route path="/Login" element={<LoginPage2 />} />
+        <Route path="/AddData" element={<FormData />} />
       </Routes>
     </>
   )
