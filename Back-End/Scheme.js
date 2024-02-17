@@ -7,6 +7,7 @@ const AnimeCompoScheme = new mongoose.Schema(
         ReleaseDate: String,
         Type: String,
         ImageUrl: String,
+        created_by:String,
         Description: String
     }
 )

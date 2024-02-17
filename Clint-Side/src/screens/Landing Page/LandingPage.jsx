@@ -23,7 +23,7 @@ export default function LandingPage() {
             Aniverse and join the anime revolution!
           </p>
           <div className="button">
-            <Link to="/MainPage">
+            <Link to="/Login">
               <button className="Landing-btn" type="submit">Lets Go !</button>
             </Link>
           </div>
