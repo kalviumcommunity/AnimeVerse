@@ -10,6 +10,32 @@ import { Link } from "react-router-dom";
 export default function MainPage() {
   
   const [data, setdata] = useState([]);
+  const [userData, setUserData] = useState({})
+
+  useEffect (() => {
+    const getCookie = (name) => {
+      const cookieArray = document.cookie.split('; ');
+      const cookie = cookieArray.find((row) => row.startsWith(name + "="))
+      return cookie ? cookie.split("=")[1] : null;
+    }
+
+    const name = getCookie("name")
+    const email = getCookie("email")
+    const username = getCookie("username")
+
+    setUserData({name, email, username})
+  }, [])
+
+  const clearCookie = (name) => {
+    document.cookie = `${name}=;expires=Thu, 01 Jan 2000 00:00:01 GMT;path=/;`;
+  };
+
+  const handleLogOut = () => {
+    clearCookie("name");
+    clearCookie("email");
+    clearCookie("username");
+    console.log("Updated Cookies:", document.cookie);
+  };
 
   useEffect(() => {
     axios
@@ -35,6 +61,14 @@ export default function MainPage() {
   
   return (
     <>
+        <nav>
+      {userData.name && <p className="name">Name: {userData.name}</p>}
+          {userData.email && <p  className="name">Email: {userData.email}</p>}
+          {userData.username && <p className="name">Username: {userData.username}</p>}
+      </nav>
+      <Link to='/login'>
+        <button onClick={handleLogOut}>Log Out</button>
+        </Link>
       <div className="flipCardDiv">{/* <FlipCard /> */}</div>
       <div className="list">
         {data.map((data, index) => (
