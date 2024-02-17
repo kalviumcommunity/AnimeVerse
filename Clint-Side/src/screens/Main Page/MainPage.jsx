@@ -10,30 +10,26 @@ import { Link } from "react-router-dom";
 export default function MainPage() {
   
   const [data, setdata] = useState([]);
-  const [userData, setUserData] = useState({})
+  // const [userData, setUserData] = useState({})
 
-  useEffect (() => {
-    const getCookie = (name) => {
-      const cookieArray = document.cookie.split('; ');
-      const cookie = cookieArray.find((row) => row.startsWith(name + "="))
-      return cookie ? cookie.split("=")[1] : null;
-    }
 
-    const name = getCookie("name")
-    const email = getCookie("email")
-    const username = getCookie("username")
 
-    setUserData({name, email, username})
-  }, [])
+  function getCookieNames() {
+    const cookieArray = document.cookie.split('; ');
+    const cookieNames = cookieArray.map((cookie) => cookie.split('=')[0]);
+    return cookieNames;
+  }
+
+  const cookieNames = getCookieNames();
+  console.log(cookieNames); 
 
   const clearCookie = (name) => {
     document.cookie = `${name}=;expires=Thu, 01 Jan 2000 00:00:01 GMT;path=/;`;
   };
 
   const handleLogOut = () => {
-    clearCookie("name");
-    clearCookie("email");
-    clearCookie("username");
+   
+    clearCookie(cookieNames[0]);
     console.log("Updated Cookies:", document.cookie);
   };
 
@@ -62,9 +58,10 @@ export default function MainPage() {
   return (
     <>
         <nav>
-      {userData.name && <p className="name">Name: {userData.name}</p>}
+      {/* {userData.name && <p className="name">Name: {userData.name}</p>}
           {userData.email && <p  className="name">Email: {userData.email}</p>}
-          {userData.username && <p className="name">Username: {userData.username}</p>}
+          {userData.username && <p className="name">Username: {userData.username}</p>} */}
+          {cookieNames[0] && <h3 className="name">Hey {cookieNames[0]} !</h3>}
       </nav>
       <Link to='/login'>
         <button onClick={handleLogOut}>Log Out</button>

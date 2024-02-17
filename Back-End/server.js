@@ -6,6 +6,8 @@ const Modal = require("./Scheme");
 const connectToMongo = require("./db");
 connectToMongo()
 const { validateInput } = require('./validator');
+const jwt = require('jsonwebtoken')
+const users = require('./users.json')
 
 app.use(cors())
 app.get('/data', (req, res) => {
@@ -57,6 +59,22 @@ app.delete('/delete/:id', (req, res) => {
 app.get('/ping', (req, res) => {
   res.send('Hello World')
 })
+
+
+const SECRET_KEY = 'ef2c0cfcd24ccf4deba07431511cf5a0ab9d4a0efd49f484aa6aeb61491672c53a60b40064434dea942cb5285f0fe605e8e46e0687c299faa9497e68fe6baa32';
+app.post('/login', (req, res) => {
+  const { username, password } = req.body;
+  const user = users.find((u) => u.username === username && u.password === password);
+  console.log(users);
+
+  if (!user) {
+    return res.status(401).send({ message: 'Invalid credentials' });
+  }
+
+  const token = jwt.sign({ sub: user.id }, SECRET_KEY, { expiresIn: '1h' });
+  res.send({ token });
+});
+
 
 
 app.listen(7000);
