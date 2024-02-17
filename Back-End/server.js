@@ -5,6 +5,7 @@ const cors = require("cors");
 const Modal = require("./Scheme");
 const connectToMongo = require("./db");
 connectToMongo()
+const { validateInput } = require('./validator');
 
 app.use(cors())
 app.get('/data', (req, res) => {
@@ -17,11 +18,12 @@ app.get("/ping", (req, res) => {
 });
 
 app.post("/add", (req, res) => {
-  // if (error) {
-  //   console.log(error);
-  //   return res.status(400).json(error.details);
-  // }
-  Modal.create(req.body)
+  const { error, value } = validateInput(req.body)
+  if (error) {
+    console.log(error);
+    return res.status(400).json(error.details);
+  }
+  Modal.create(value)
   .then(users => res.json(users))
   .catch(err => console.log(err));
 })
