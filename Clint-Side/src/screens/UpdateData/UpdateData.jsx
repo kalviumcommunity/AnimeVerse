@@ -1,7 +1,8 @@
-import { useState } from "react";
+import { useState, useEffect } from "react";
 import { useNavigate } from 'react-router-dom'
 import axios from 'axios'
 import "./UpdateData.css";
+import { useParams } from "react-router-dom";
 
 export default function UpdateData() {
     const {id} = useParams()
@@ -26,7 +27,7 @@ export default function UpdateData() {
     },[])
     const Update = (e) => {
       e.preventDefault()
-      axios.put('http://localhost:7000/update/'+id , {Name,ReleaseDate, Type, ImageUrl,Description})
+      axios.put(`http://localhost:7000/update/${id}` , {Name,ReleaseDate, Type, ImageUrl,Description})
 
           .then(res => {
               console.log(res)

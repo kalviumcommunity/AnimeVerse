@@ -17,7 +17,7 @@ function App() {
         <Route path="/MainPage" element={<MainPage />} />
         <Route path="/Login" element={<LoginPage2 />} />
         <Route path="/AddData" element={<FormData />} />
-        <Route path="/update" element={<UpdateData/>} />
+        <Route path="/update/:id" element={<UpdateData/>} />
       </Routes>
     </>
   )

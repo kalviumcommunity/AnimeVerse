@@ -24,7 +24,7 @@ export default function MainPage() {
   }, []);
 
   const handleDelete = (id) => {
-    axios.delete('http://localhost:7000/delete' + id)
+    axios.delete(`http://localhost:7000/delete/${id}`)
       .then(res => {
         console.log(res)
         window.location.reload();
