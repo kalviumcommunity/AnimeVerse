@@ -5,6 +5,7 @@ import LandingPage from './screens/Landing Page/LandingPage'
 import FormData from './screens/AddData/AddData'
 import MainPage from './screens/Main Page/MainPage'
 import { Routes, Route } from "react-router-dom";
+import UpdateData from './screens/UpdateData/UpdateData';
 
 function App() {
   return (
@@ -16,6 +17,7 @@ function App() {
         <Route path="/MainPage" element={<MainPage />} />
         <Route path="/Login" element={<LoginPage2 />} />
         <Route path="/AddData" element={<FormData />} />
+        <Route path="/update/:id" element={<UpdateData/>} />
       </Routes>
     </>
   )

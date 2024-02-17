@@ -3,6 +3,7 @@ import React from "react";
 import "./MainPage.css";
 import axios from "axios";
 import { useState, useEffect } from "react";
+import { Link } from "react-router-dom";
 // import data from "../../Data.json";
 // import FlipCard from "../../Components/Flip Card/FlipCard";
 
@@ -21,6 +22,17 @@ export default function MainPage() {
         console.log(error);
       });
   }, []);
+
+  const handleDelete = (id) => {
+    axios.delete(`http://localhost:7000/delete/${id}`)
+      .then(res => {
+        console.log(res)
+        window.location.reload();
+      })
+      .catch(err => console.log(err))
+  }
+
+  
   return (
     <>
       <div className="flipCardDiv">{/* <FlipCard /> */}</div>
@@ -45,8 +57,13 @@ export default function MainPage() {
                   <h1>Description</h1>
                   <p className="Disc">{data.Description}</p>
                 </div>
+                <div className="buttons">
+                  <Link to={`/update/${data._id}`}> <button className='EditButton'>Edit</button></Link>
+                  <button onClick={(e) => handleDelete(data._id)} className='DeleteButton'>Delete</button>
+                </div>
               </div>
             </div>
+ 
           </div>
         ))}
       </div>
